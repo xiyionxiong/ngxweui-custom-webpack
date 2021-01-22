@@ -1,0 +1,11 @@
+{
+  "/proxy/*": {
+    "target": "",
+    "secure": false,
+    "pathRewrite": {
+      "^/proxy": ""
+    },
+    "logLevel": "debug",
+    "changeOrigin": true
+  }
+}
