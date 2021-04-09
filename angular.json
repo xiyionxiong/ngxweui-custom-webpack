@@ -18,9 +18,11 @@
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
             "customWebpackConfig": {
-              "path": "./webpack.config.js",
+              "path": "./webpack.config.ts",
               "mergeStrategies": {
-                "module.rules": "append"
+                "module": {
+                  "rules": "append"
+                }
               },
               "replaceDuplicatePlugins": true
             },
